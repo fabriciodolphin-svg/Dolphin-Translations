@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolphin Translations - Soluções em Tradução Digital</title>
+    <meta name="description" content="Serviços de tradução juramentada, técnica, simples e apostila de Haia com entrega 100% digital. Orçamento instantâneo e processo online.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2><img src="images/dolphin_logo.png" alt="Dolphin Translations Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;"> Dolphin Translations</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <button class="btn-primary" onclick="scrollToForm()">Orçamento Instantâneo</button>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Traduções Profissionais com <span class="highlight">Entrega 100% Digital</span></h1>
+                    <p class="hero-subtitle">Tradução Juramentada, Técnica, Simples e Apostila de Haia com entrega rápida</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-download"></i>
+                            <span>Entrega Digital</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Processo Rápido</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% Seguro</span>
+                        </div>
+                    </div>
+                    <button class="btn-cta" onclick="scrollToForm()">Solicitar Orçamento</button>
+                </div>
+                <div class="hero-form">
+                    <div class="form-card">
+                    <h3>Solicite Orçamento</h3>
+                        <p class="form-description">Nos chame no WhatsApp para um orçamento imediato, ou preencha o formulário online com suas informações e anexe seus documentos.</p>
+                        <form id="orcamento-form">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="servico">Tipo de Serviço</label>
+                                <select id="servico" name="servico" required>
+                                    <option value="">Selecione o serviço</option>
+                                    <option value="juramentada">Tradução Juramentada</option>
+                                    <option value="tecnica">Tradução Técnica</option>
+                                    <option value="simples">Tradução Simples</option>
+                                    <option value="apostila">Apostila de Haia</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="documentos">Documentos</label>
+                                <div class="file-upload">
+                                    <input type="file" id="documentos" name="documentos" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+                                    <div class="file-upload-text">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <span>Clique ou arraste seus documentos aqui</span>
+                                        <small>Formatos aceitos: PDF, JPG, PNG, DOC, DOCX</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-calculator"></i>
+                                Ver Preço e Prazo
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos traduções profissionais com entrega 100% digital</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/juramentada-nova.jpg" alt="Tradução Juramentada">
+                    </div>
+                    <div class="service-content">
+                        <h3><i class="fas fa-certificate"></i> Tradução Juramentada</h3>
+                        <p>Tradução oficial aceita por órgãos públicos, cartórios e instituições de ensino. Válida em todo território nacional.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Validade oficial</li>
+                            <li><i class="fas fa-check"></i> Aceita por órgãos públicos</li>
+                            <li><i class="fas fa-check"></i> Entrega Digital</li>
+                        </ul>
+                        <button class="btn-service" onclick="selectService('juramentada')">Solicitar Orçamento</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/tecnica-nova.jpg" alt="Tradução Técnica">
+                    </div>
+                    <div class="service-content">
+                        <h3><i class="fas fa-cogs"></i> Tradução Técnica</h3>
+                        <p>Tradução especializada para documentos técnicos, manuais, especificações e textos científicos.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Terminologia especializada</li>
+                            <li><i class="fas fa-check"></i> Profissionais qualificados</li>
+                            <li><i class="fas fa-check"></i> Precisão técnica</li>
+                        </ul>
+                        <button class="btn-service" onclick="selectService('tecnica')">Solicitar Orçamento</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/simples-nova.png" alt="Tradução Simples">
+                    </div>
+                    <div class="service-content">
+                        <h3><i class="fas fa-file-alt"></i> Tradução Simples</h3>
+                        <p>Tradução para documentos gerais, textos comerciais, correspondências e materiais informativos.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Processo ágil</li>
+                            <li><i class="fas fa-check"></i> Preço acessível</li>
+                            <li><i class="fas fa-check"></i> Qualidade garantida</li>
+                        </ul>
+                        <button class="btn-service" onclick="selectService('simples')">Solicitar Orçamento</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/apostila-melhorada.png" alt="Apostila de Haia">
+                    </div>
+                    <div class="service-content">
+                        <h3><i class="fas fa-globe"></i> Apostila de Haia</h3>
+                        <p>Legalização internacional de documentos para uso em países signatários da Convenção de Haia.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Validade internacional</li>
+                            <li><i class="fas fa-check"></i> Processo simplificado</li>
+                            <li><i class="fas fa-check"></i> Reconhecimento mundial</li>
+                        </ul>
+                        <button class="btn-service" onclick="selectService('apostila')">Solicitar Orçamento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Como Funciona</h2>
+                <p>Processo 100% digital em 4 etapas simples</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3>Solicite Orçamento</h3>
+                    <p>Preencha o formulário online com suas informações e anexe seus documentos</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <h3>Envie Documentos</h3>
+                    <p>Faça upload dos seus documentos de forma segura através da nossa plataforma</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Acompanhe o Progresso</h3>
+                    <p>Receba atualizações em tempo real sobre o andamento da sua tradução</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Receba Digitalmente</h3>
+                    <p>Baixe sua tradução diretamente do seu email, de forma rápida e segura</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens Digital -->
+    <section class="digital-advantages">
+        <div class="container">
+            <div class="advantages-content">
+                <div class="advantages-text">
+                    <h2>Vantagens da Entrega Digital</h2>
+                    <div class="advantage-list">
+                        <div class="advantage-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Rapidez na Entrega</h4>
+                                <p>Receba suas traduções em minutos após a conclusão, sem esperar pelos correios</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Segurança Total</h4>
+                                <p>Seus documentos ficam protegidos em ambiente digital seguro e criptografado</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Acesso Imediato</h4>
+                                <p>Acesse suas traduções a qualquer hora, de qualquer lugar, pelo seu dispositivo</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Sustentabilidade</h4>
+                                <p>Contribua com o meio ambiente eliminando o uso de papel e transporte físico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages-visual">
+                    <div class="digital-mockup">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>PDF Seguro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Idiomas -->
+    <section class="languages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Idiomas</h2>
+                <p>Traduzimos para mais de 20 idiomas com qualidade profissional</p>
+            </div>
+            <div class="language-list-grid">
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Inglês</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Espanhol</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Italiano</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Francês</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Português</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Holandês</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Alemão</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mandarim</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Russo</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Chinês</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Japonês</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Coreano</span>
+                </div>
+                <div class="language-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>E muitos outros...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dolphin Translations</h3>
+                    <p>Sua parceira em traduções profissionais e digitais. Conectando culturas e negócios com precisão e agilidade.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Atendimento 100% Online</p>
+                        <p><i class="fas fa-phone"></i> +55 (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@dolphintranslations.com</p>
+                        <p><i class="fas fa-clock"></i> Seg-Sex: 8h às 18h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dolphin Translations. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
